@@ -1,7 +1,7 @@
 package com.alma.alma.controller;
 
 import com.alma.alma.entity.Profesor;
-import com.alma.alma.service.ProfesorService;
+import com.alma.alma.service.imp.ProfesorServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,7 +15,7 @@ import java.util.Optional;
 public class ProfesorController {
 
     @Autowired
-    private ProfesorService profesorService;
+    private ProfesorServiceImp profesorService;
 
     @PostMapping
     public ResponseEntity<Profesor> createProfesor(@RequestBody Profesor profesor) {

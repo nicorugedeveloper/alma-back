@@ -2,6 +2,8 @@ package com.alma.alma.controller;
 
 import com.alma.alma.entity.Clase;
 import com.alma.alma.service.ClaseService;
+import com.alma.alma.service.imp.ClaseServiceImp;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,10 +14,10 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/clases")
+@AllArgsConstructor
 public class ClaseController {
 
-    @Autowired
-    private ClaseService claseService;
+    private final ClaseService claseService;
 
     @PostMapping
     public ResponseEntity<Clase> createClase(@RequestBody Clase clase) {
@@ -25,8 +27,7 @@ public class ClaseController {
 
     @GetMapping
     public ResponseEntity<List<Clase>> getAllClases() {
-        List<Clase> clases = claseService.findAll();
-        return new ResponseEntity<>(clases, HttpStatus.OK);
+        return new ResponseEntity<>( claseService.findAll(), HttpStatus.OK);
     }
 
     @GetMapping("/{id}")
