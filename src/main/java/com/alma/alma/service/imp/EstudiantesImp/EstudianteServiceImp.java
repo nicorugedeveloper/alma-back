@@ -1,10 +1,9 @@
-package com.alma.alma.service.imp;
+package com.alma.alma.service.imp.EstudiantesImp;
 
 import com.alma.alma.entity.Estudiante;
 import com.alma.alma.repository.EstudianteRepository;
-import com.alma.alma.service.EstudianteService;
+import com.alma.alma.service.EstudianteInterface.EstudianteService;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,10 +16,12 @@ public class EstudianteServiceImp implements EstudianteService {
     private final EstudianteRepository estudianteRepository;
     @Override
     public Estudiante save(Estudiante estudiante) {
+
         return estudianteRepository.save(estudiante);
     }
     @Override
     public List<Estudiante> findAll() {
+
         return estudianteRepository.findAll();
     }
     @Override

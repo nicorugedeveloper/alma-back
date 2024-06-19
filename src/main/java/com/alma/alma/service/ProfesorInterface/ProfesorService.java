@@ -1,4 +1,4 @@
-package com.alma.alma.service;
+package com.alma.alma.service.ProfesorInterface;
 
 import com.alma.alma.entity.Profesor;
 

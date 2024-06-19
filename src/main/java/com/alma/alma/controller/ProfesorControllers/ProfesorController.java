@@ -1,7 +1,7 @@
-package com.alma.alma.controller;
+package com.alma.alma.controller.ProfesorControllers;
 
 import com.alma.alma.entity.Profesor;
-import com.alma.alma.service.imp.ProfesorServiceImp;
+import com.alma.alma.service.imp.ProfesorImp.ProfesorServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

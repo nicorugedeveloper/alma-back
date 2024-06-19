@@ -1,4 +1,4 @@
-package com.alma.alma.service;
+package com.alma.alma.service.EstudianteInterface;
 
 import com.alma.alma.entity.Estudiante;
 

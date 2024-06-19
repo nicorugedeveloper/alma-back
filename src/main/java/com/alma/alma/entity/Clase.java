@@ -1,9 +1,8 @@
 package com.alma.alma.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -19,6 +18,10 @@ public class Clase {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer clase_id;
+
+    @NotNull
+    @NotEmpty
+    @Column(nullable = false)
     private String nombre_clase;
 }
 

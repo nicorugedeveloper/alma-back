@@ -1,8 +1,8 @@
-package com.alma.alma.service.imp;
+package com.alma.alma.service.imp.ProfesorImp;
 
 import com.alma.alma.entity.Profesor;
 import com.alma.alma.repository.ProfesorRepository;
-import com.alma.alma.service.ProfesorService;
+import com.alma.alma.service.ProfesorInterface.ProfesorService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
