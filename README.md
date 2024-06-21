@@ -51,7 +51,7 @@ Alma API es un proyecto de API RESTful desarrollado con Spring Boot. Esta API pe
 
 ## Uso
 
-Una vez que la aplicación esté en ejecución, puedes acceder a la documentación de la API en: http://localhost:8090/swagger-ui.html
+Una vez que la aplicación esté en ejecución, puedes acceder a la documentación de la API en: http://localhost:8090/doc/swagger-ui/index.html
 
 El proyecto utiliza las siguientes dependencias:
 
